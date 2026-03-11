@@ -3,12 +3,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import make_regression
 
-X, y = make_regression(
-    n_samples=1000,
-    n_features=3,
-    noise=10,
-    random_state=42
-)
+
 class MultipleLinearRegression:
 
     def __init__(self, X_train, y_train, learning_rate=1e-10, epochs=30000):
